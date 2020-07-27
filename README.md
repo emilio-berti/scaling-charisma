@@ -22,4 +22,4 @@ This repository contains the code and data used in the study *Body size is a goo
 
 ## Shiny app to explore residuals
 
-I made a Shiny app to explore residuals and outliers. This can be launched downloading the entire repository and launching the script *R/shiny.R*. This will install also the required R packages: tidyverse, plotly, shiny, magrittr.
+I made a Shiny app to explore residuals and outliers. This can be launched downloading the entire repository and running the script *R/shiny.R*. This will install also the required R packages: *tidyverse*, *plotly*, *shiny*, *magrittr*.

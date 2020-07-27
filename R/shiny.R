@@ -13,6 +13,5 @@ package.check <- lapply(
   }
 )
 
-data_to_shiny <- read_rds("../shiny.rds")
 source("app.R")
 shinyApp(ui = ui, server = server)
