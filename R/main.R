@@ -66,8 +66,7 @@ d <- datasets %>%
   filter(!is.na(IUCN))
 
 # remove one outlier
-d <- d %>% 
-  filter(!(Species == "Mus musculus" & Dataset == "MacDonald"))
+d %<>% filter(!(Species == "Mus musculus" & Dataset == "MacDonald"))
 
 # plot data ------
 datasets %>% 
@@ -177,7 +176,7 @@ p %>%
               method = "lm", alpha = 0, size = 1) +
   scale_color_manual(values = status.colors, 
                      name = "IUCN") +
-  ylab("Charismatic value") +
+  ylab("Charisma") +
   xlab("Body size (g)") +
   theme_modern() +
   theme(legend.position = "right",
