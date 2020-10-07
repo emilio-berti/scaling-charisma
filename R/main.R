@@ -219,7 +219,7 @@ datasets %>%
                   size = 0.75, color = "white") +
   scale_fill_manual(values = status.colors, name = "IUCN conservation status") +
   xlab("IUCN conservation status") +
-  ylab("Charismatic value") +
+  ylab("Charisma") +
   theme_modern(legend.position = "none")
 
 ggsave("Figures/IUCN_means.svg", width = 8, height = 6)
