@@ -1,5 +1,3 @@
-library(tidyverse)
-
 data_to_shiny <- read_csv("../charisma.csv")
 
 ui <- fluidPage(
@@ -120,7 +118,7 @@ server <- function(input, output) {
          pull(Species) %>% 
          sort() %>% 
          unique()
-   }, sep = ", ")
+   })
 }
 
 # Run the application 
